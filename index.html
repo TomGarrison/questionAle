@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover-min.css">
+    <!-- javascript file -->
+    <script src="app.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <nav id="nav" class="text-sm-left navbar navbar-default navbar-fixed-top">
+  <div class="container <text-sm-left></text-sm-left>">
+    <a class="text-sm-left" href="index.html">Home</a>
+  </div>
+</nav>
+    <div class="container-fluid">
+        <h1 id="logo">Question<span>Ale<span></h1><br>
+        <div class="col-md-12 text-center">
+            <!-- Modal -->
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h1 id="logo2">How To Play</h1>
+                    <h3>Questionale is a group trivia drinking game.<br><br>
+                      There are no teams, and everyone must work together to correctly answer questions that appear on the screen.<br><br>
+                      When you and your friends select a correct answer, you will automatically move forward to the next question.<br><br>
+                      When you answer a question incorrectly, a frosty mug will appear on the screen and all players will have to drink until the mug disappears.<br><br>
+                      Questions get easier the more you drink, so this game will provide a long night of fun. Choose a trivia category on begin!</h3>
+                </div>
+            </div>
+            <!-- Modal end -->
+            <!-- buttons -->
+            <a href="#openModal"><button class="hvr-float-shadow" id="howTo" type="button" name="button">How To Play</button></a><br>
+            <button class="hvr-float-shadow" id="play" type="button" name="button">PLAY</button>
+        </div>
+    </div>
+    <!-- buttons end -->
+    <!-- Select Category -->
+    <div class="cat ">
+    <div class="catLogo contianer-fluid ">
+        <h1>Pick A Category</h1>
+    </div>
+    <div id="categoryRows" class="container-fluid">
+        <div class="row ">
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="" type="button" name="button">All Categories</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="9" type="button" name="button">General Knowledge</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="12" type="button" name="button">Music</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="13" type="button" name="button">Musical & Theatres</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="10" type="button" name="button">Books</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="11" type="button" name="button">Film</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="27" type="button" name="button">Animals</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="28" type="button" name="button">Vehicles</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="14" type="button" name="button">Television</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="15" type="button" name="button">Video Games</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="16" type="button" name="button">Board Games</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="17" type="button" name="button">Science & Nature</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="18" type="button" name="button">Science: Computers</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="19" type="button" name="button">Science: Mathematics</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="30" type="button" name="button">Science: Gadgets</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="22" type="button" name="button">Geography</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="20" type="button" name="button">Mythology</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="23" type="button" name="button">History</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="24" type="button" name="button">Politics</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="25" type="button" name="button">Art</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="26" type="button" name="button">Celebrites</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="29" type="button" name="button">Comics</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="31" type="button" name="button">Japanese Anime Manga</button></div>
+            <div class="col-6 col-sm-3"><button onclick="" class="catBtns hvr-underline-from-center" value="32" type="button" name="button">Cartoons & Animation</button></div>
+        </div>
+    </div>
+  </div>
+    <!-- beer loading -->
+    <div class="" id="container">
+  <div class="pour"></div>
+  <div id="beaker">
+    <div class="beer-foam">
+      <div class="foam-1"></div>
+      <div class="foam-2"></div>
+      <div class="foam-3"></div>
+      <div class="foam-4"></div>
+      <div class="foam-5"></div>
+      <div class="foam-6"></div>
+      <div class="foam-7"></div>
+    </div>
+
+    <div id="liquid">
+      <div class="bubble bubble1"></div>
+      <div class="bubble bubble2"></div>
+      <div class="bubble bubble3"></div>
+      <div class="bubble bubble4"></div>
+      <div class="bubble bubble5"></div>
+    </div>
+  </div>
+</div>
+<div class="appendRight"></div>
+<!-- beer loading end -->
+<div id="timer"></div>
+<!-- questions -->
+<div class="container-fluid col-md-12 text-center ">
+  <div class="" id="questions"></div>
+</div>
+
+</body>
+
+</html>
