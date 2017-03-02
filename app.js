@@ -85,7 +85,6 @@ $(document).ready(function() {
 
 
                   $('.incorrectAnswer').click(function() {
-
                       $('.incorrectAnswer').addClass('wrong')
                       $('.correctAnswer').addClass('right')
                     setTimeout(function() {drinkUp()}, 2000)
@@ -93,11 +92,13 @@ $(document).ready(function() {
                   })
 
                   function appendDrink() {
-                    // if($('#liquid').children().length > 2){
                       $('#liquid').children()[4].remove()
-
                     $('#liquid').append(`<h2 class="text-align" id="rightAnswer">Correct answer: ${question.correct_answer}</h2>`)
-                    // $('.appendRight').fadeIn(10000).fadeOut(6000)
+                  }
+
+                  function appendDrinkup() {
+                    $('.appendRight').children().remove()
+                    $('.appendRight').append("<h1 class='text-center'>Drink Until The Beer Disappears</h1>").fadeIn(5000).fadeOut(5000)
                   }
 
                 function drinkUp() {
@@ -105,11 +106,11 @@ $(document).ready(function() {
                   $('#container').fadeIn(9000).fadeOut(1000)
                   $('#questions').addClass('hide')
 
-                  // appendRight()
                   setTimeout(function() {
                     $('#questions').fadeIn(13000).removeClass('hide')
                   }, 8000);
                   index++
+                  appendDrinkup()
                   appendDrink()
                   makeQuestion(index)
                 }
