@@ -79,12 +79,15 @@ html, body {
     width: 200px;
     display: inline;
     font-family: 'Fascinate';
-    font-size: 2vw;
+    font-size: 4vw;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #FEFAEC, 10px .1em 0 #625772;
     color: #F38181;
     letter-spacing: 0.18em;
+}
+#correctAnswerDiv{
+  text-align: center;
 }
 /*QUESTION LOGO*/
 
@@ -211,7 +214,7 @@ button {
 }
 
 .right {
-    color: #fff;
+    color: #000;
     letter-spacing: 10px;
     font-size: 20px;
     font-family: 'Fira Sans', sans-serif;
@@ -291,6 +294,7 @@ button {
 /*beer*/
 
 #container {
+    text-align: center;
     height: 370px;
     margin: 0 auto;
     overflow: hidden;

@@ -92,8 +92,8 @@ $(document).ready(function() {
                   })
 
                   function appendDrink() {
-                      $('#liquid').children()[4].remove()
-                    $('#liquid').append(`<h2 class="text-align" id="rightAnswer">Correct answer: ${question.correct_answer}</h2>`)
+                    $('#correctAnswerDiv').children().remove()
+                    $('#correctAnswerDiv').append(`<h2 class='text-center' id="rightAnswer">Answer: ${question.correct_answer}</h2>`).fadeIn(5000).fadeOut(5000)
                   }
 
                   function appendDrinkup() {
